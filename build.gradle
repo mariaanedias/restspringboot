@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+
+jar {
+    baseName = 'springboot-rest-service'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-thymeleaf")
+    compile("org.json:json:20160212")
+    compile("javax.ws.rs:javax.ws.rs-api:2.0.1")
+    compile("org.glassfish.jersey.containers:jersey-container-servlet:2.15")
+    compile("javax.servlet:javax.servlet-api:3.1.0")
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('com.jayway.jsonpath:json-path', 'junit:junit:4.12')
+}
+
+jar {
+    baseName = 'springboot-gradle'
+    version =  '0.1.0'
+}
+
