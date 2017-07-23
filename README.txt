@@ -27,3 +27,6 @@ Passar o conteúdo do arquivo TestJSON no body.
 Deve retornar o mesmo conteúdo no response (significa que passou no controller, mapeou para as entities e retornou OK).
 
 Você pode brincar e modificar qualquer parâmetro/response.
+
+Usando STS (Spring Tool Suite) Starter:
+https://spring.io/blog/2015/03/18/spring-boot-support-in-spring-tool-suite-3-6-4
