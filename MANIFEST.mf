@@ -1,0 +1,4 @@
+---
+applications:
+- name: springboot-gradle-1-0.1.0.jar
+  memory: 512M

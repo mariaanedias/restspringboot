@@ -1,0 +1,13 @@
+bin
+/bin
+build
+/build
+/gradle/
+/gradlew
+/gradlew.bat
+/hs_err_pid12213.log
+.project
+.classpath
+.gradle
+gradlew
+.settings
