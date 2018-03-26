@@ -1,4 +1,4 @@
-Rodar SpringBoot com Gradle ->  gradle bootRun no cmd
+Rodar SpringBoot com Gradle -> ./gradlew bootRun no cmd
 
 Usar Postman ou similar pra chamar as APIs REST.
 
@@ -18,15 +18,15 @@ http://localhost:8080/testGet
 
 POST
 http://localhost:8080/testPostParam
-passando como parâmetro form-data o key paramValue e qualquer valor. (se não passar nada retorna o default).
+passando como parï¿½metro form-data o key paramValue e qualquer valor. (se nï¿½o passar nada retorna o default).
 
 POST
 http://localhost:8080/profiles
 Body raw - JSON APPLICATION
-Passar o conteúdo do arquivo TestJSON no body.
-Deve retornar o mesmo conteúdo no response (significa que passou no controller, mapeou para as entities e retornou OK).
+Passar o conteï¿½do do arquivo TestJSON no body.
+Deve retornar o mesmo conteï¿½do no response (significa que passou no controller, mapeou para as entities e retornou OK).
 
-Você pode brincar e modificar qualquer parâmetro/response.
+Vocï¿½ pode brincar e modificar qualquer parï¿½metro/response.
 
 Usando STS (Spring Tool Suite) Starter:
 https://spring.io/blog/2015/03/18/spring-boot-support-in-spring-tool-suite-3-6-4

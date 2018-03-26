@@ -8,13 +8,9 @@ buildscript {
 }
 
 apply plugin: 'java'
+apply plugin: 'java-library-distribution'
 apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
-
-jar {
-    baseName = 'springboot-rest-service'
-    version =  '0.1.0'
-}
 
 repositories {
     mavenCentral()
@@ -34,8 +30,14 @@ dependencies {
     testCompile('com.jayway.jsonpath:json-path', 'junit:junit:4.12')
 }
 
+distZip.shouldRunAfter(build)
+
 jar {
-    baseName = 'springboot-gradle'
+    enabled = true
+    baseName = 'springboot-gradle-1'
     version =  '0.1.0'
+    manifest {
+        attributes 'Main-Class': 'controller.MeterApplication'
+    }
 }
 
